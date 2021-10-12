@@ -1,8 +1,11 @@
+import Button from '@restart/ui/esm/Button';
 import React from 'react';
 import { Container, Form } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Header from '../Header/Header';
 
 const Login = () => {
+
     return (
         <div>
             <Container>
@@ -25,7 +28,8 @@ const Login = () => {
               Login
             </button>
           </Form>
-            </Container>
+          <Button className="my-3"><Link to="/register">New User?</Link></Button>
+          </Container>
 
         </div>
     );
